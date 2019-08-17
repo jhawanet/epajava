@@ -81,7 +81,7 @@ Para realizar una prueba, crearemos un paquete que nos servira para almacenar la
 
 9. Hacer clic derecho sobre la carpeta **src** y seleccionar la opción **New** > **Package**
 
-| ![Figura 10](tutorial/test-1.png) | 
+| ![Figura 10](tutorial/test-3.png) | 
 |:--:|
 | *Figura 11* |
 
@@ -95,7 +95,7 @@ Después creamos una clase que tendra nuestro código de prueba
 
 11. Hacer clic derecho sobre la carpeta **src** y seleccionar la opción **New** > **Class**
 
-| ![Figura 13](tutorial/test-3.png) | 
+| ![Figura 13](tutorial/test-1.png) | 
 |:--:|
 | *Figura 13* |
 
