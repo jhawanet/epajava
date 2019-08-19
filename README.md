@@ -3,109 +3,105 @@
 EpaJava a coupling structure that allows calls from Java to the EPAToolkit dynamic link library of EPANET. It was implemented through the Java Native Access library (JNA), allowing dynamic and native invocations of the EPAToolkit. A set of classes were developed in the library to represent the hydraulic components involved in the modeling of WDN (e.g., pipes, pumps, reservoirs).
 A convenient feature of using the JNA is the native calling to each of the available methods in EPANET for any of the implemented classes without any modifications concerning the original EPAToolkit library. Therefore, users already familiar with EPAToolkit should be able to accurately represent a network in the coupling library. In practical terms, the library loads the water network characteristics through an EPANET input file (.inp), in which the operational variables are dynamically modified according to the optimization procedure.
 
-## Comenzando 🚀
+## Getting Started 🚀
 
-Las siguientes instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+The following instructions will allow you to obtain a copy of the EpaJava in an operational way for development and testing purposes.
 
-### Pre-requisitos 📋
+### Requirements 📋
 
-- Sistema Operativo Windows 10.
-- JDK Java 8: [Ver guía de instalación](tutorial/JDK-Java-8.md).
-- Entorno de desarrollo Eclipse: [Ver guía de instalación](tutorial/Eclipse.md).
+- Windows 10.
+- JDK Java 8: [Installation Guide](tutorial/JDK-Java-8.md).
+- Eclipse IDE: [Installation Guide](tutorial/Eclipse.md).
 
-### Descarga del Proyecto ⬇️
+### Project Download ⬇️
 
-1. Para descargar puede ir al link como se muestra en la Figura 1 o directamente haciendo clic [aquí](https://github.com/jhawanet/epajava/archive/master.zip).
+1. To download, you can go to the link as shown in Figure 1 or going directly clicking [here](https://github.com/jhawanet/epajava/archive/master.zip).
 
-| ![Figura 1](tutorial/download.png) | 
+| ![Figure 1](tutorial/download.png) | 
 |:--:|
-| *Figura 1* |
+| *Figure 1* |
 
-2. Se descarga un archivo comprimido en formato ZIP, por lo que es necesario descomprimir para acceder a su contenido, para ello debe seguir los pasos indicados en las Figuras 2 y 3.
+2. Unzip the file to access its content, following the steps indicated in figures 2 and 3.
 
-| ![Figura 2](tutorial/extract-all.png) | 
+| ![Figure 2](tutorial/extract-all.png) | 
 |:--:|
-| *Figura 2* |
+| *Figure 2* |
 
-| ![Figura 3](tutorial/extract.png) | 
+| ![Figure 3](tutorial/extract.png) | 
 |:--:|
-| *Figura 3* |
+| *Figure 3* |
 
-### Integracion en un proyecto JAVA 🔧
+### Integration to a Java Project in Eclipse 🔧
 
-Para los siguientes pasos se utilizara el programa Eclipse:
+3. Create a new Java Project, as seen in figures 4 and 5:
 
-3. Creamos un proyecto nuevo como se ve en las Figuras 4 y 5:
-
-| ![Figura 4](tutorial/new-project-1.png) | 
+| ![Figure 4](tutorial/new-project-1.png) | 
 |:--:|
-| *Figura 4* |
+| *Figure 4* |
 
-| ![Figura 5](tutorial/new-project-2.png) | 
+| ![Figure 5](tutorial/new-project-2.png) | 
 |:--:|
-| *Figura 5* |
+| *Figure 5* |
 
-4. Se debe agregar la dependencia al proyecto descargado, para ello es necesario configurar la opción **Configure Build Path...**
+4. Add the dependency to the created project, for this, it is necessary to configure the **Configure Build Path** option, figure 6.
 
-| ![Figura 5](tutorial/configure-build-path-1.png) | 
+| ![Figure 6](tutorial/configure-build-path-1.png) | 
 |:--:|
-| *Figura 5* |
+| *Figure 6* |
 
-5. Una vez abierta la ventana se debe seleccionar la pestaña **Libraries**
+5. Open the window and select the **Libraries** tab, figure 7.
 
-| ![Figura 6](tutorial/configure-build-path-2.png) | 
+| ![Figure 7](tutorial/configure-build-path-2.png) | 
 |:--:|
-| *Figura 6* |
+| *Figure 7* |
 
-6. Después, se debe seleccionar el botón **Add External JARs...**
+6. Select the **Add External JARs** button, figure 8.
 
-| ![Figura 7](tutorial/configure-build-path-3.png) | 
+| ![Figure 8](tutorial/configure-build-path-3.png) | 
 |:--:|
-| *Figura 7* |
+| *Figure 8* |
 
-7. Aquí debemos buscar la carpeta donde quedó almacenado el proyecto epajava y seleccionar el archivo **epajava.jar**
+7. Select the folder where the EpaJava project was stored and select the **epajava.jar** file, figure 9.
 
-| ![Figura 8](tutorial/configure-build-path-4.png) | 
+| ![Figure 9](tutorial/configure-build-path-4.png) | 
 |:--:|
-| *Figura 8* |
+| *Figure 9* |
 
-8. Y finalmente seleccionamos el botón **Apply and Close**
+8. Finally, select the **Apply and Close** button, figure 10.
 
-| ![Figura 9](tutorial/configure-build-path-5.png) | 
+| ![Figure 10](tutorial/configure-build-path-5.png) | 
 |:--:|
-| *Figura 9* |
+| *Figure 10* |
 
-## Ejecutando las pruebas ⚙️
+## Testing ⚙️
 
-Para realizar una prueba, crearemos un paquete que nos servira para almacenar la información de las redes (archivos .inp) 
+To perform a test, create a new package to store the networks' information (.inp files).
 
-9. Hacer clic derecho sobre la carpeta **src** y seleccionar la opción **New** > **Package**
+9. Right-click on the **src** folder and select the option **New** > **Package**, figure 11.
 
-| ![Figura 10](tutorial/test-3.png) | 
+| ![Figure 11](tutorial/test-3.png) | 
 |:--:|
-| *Figura 11* |
+| *Figure 11* |
 
-10. En este caso al paquete lo nombraremos **resources** y ahí guardaremos el archivo .inp que utilizaremos.
+10. Name the package as **resources** or another name of your choice. Save the .inp file that we will use, then create a class for the test code, figure 12.
 
-| ![Figura 12](tutorial/test-2.png) | 
+| ![Figure 12](tutorial/test-4.png) | 
 |:--:|
-| *Figura 12* |
+| *Figure 12* |
 
-Después creamos una clase que tendra nuestro código de prueba
+11. Right-click on the **src** folder and select the option **New** > **Class**, figure 13.
 
-11. Hacer clic derecho sobre la carpeta **src** y seleccionar la opción **New** > **Class**
-
-| ![Figura 13](tutorial/test-1.png) | 
+| ![Figure 13](tutorial/test-1.png) | 
 |:--:|
-| *Figura 13* |
+| *Figure 13* |
 
-12. Una vez dentro se debe indicar un nombre a la clase, en este caso llamamos **HydraulicSimulation**
+12. Indicate a name to the class, in this case, we call it **HydraulicSimulation**, figure 14.
 
-| ![Figura 14](tutorial/test-4.png) | 
+| ![Figure 14](tutorial/test-2.png) | 
 |:--:|
-| *Figura 14* |
+| *Figure 14* |
 
-13. Dentro de la clase creada se debe copiar y pegar el siguiente código
+13.	Within the created class, copy and paste the following code.
 
 ```java
 import java.net.URISyntaxException;
@@ -139,18 +135,12 @@ public class HydraulicSimulation {
 }
 ```
 
-Desde Eclipse debe verse de la siguiente forma:
+14. Finally, to run the experiment select the Run tab in the Eclipse menu, and click the first **Run** option, figure 15.
 
-| ![Figura 5](tutorial/test-5.png) | 
+| ![Figure 15](tutorial/test-6.png) | 
 |:--:|
-| *Figura 5* |
+| *Figure 15* |
 
-14. Finalmente para ejecutar debemos ir al Menú de Eclipse y seleccionar la pestaña **Run** y la primera opción **Run**.
+## License 📄
 
-| ![Figura 6](tutorial/test-6.png) | 
-|:--:|
-| *Figura 6* |
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (MIT) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+This project is under the MIT License. See the [LICENSE](LICENSE.md) file for the full license text.
