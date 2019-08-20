@@ -1,6 +1,7 @@
 # EpaJava
 
-EpaJava a coupling structure that allows calls from Java to the EPAToolkit dynamic link library of EPANET. It was implemented through the Java Native Access library (JNA), allowing dynamic and native invocations of the EPAToolkit. A set of classes were developed in the library to represent the hydraulic components involved in the modeling of WDN (e.g., pipes, pumps, reservoirs).
+EpaJava a coupling structure that allows calls from Java to the EPANET Programmer's Toolkit (EPAToolkit) dynamic link library of EPANET. It was implemented through the Java Native Access library (JNA), allowing dynamic and native invocations of the EPAToolkit. A set of classes were developed in the library to represent the hydraulic components involved in the modeling of WDN (e.g., pipes, pumps, reservoirs).
+
 A convenient feature of using the JNA is the native calling to each of the available methods in EPANET for any of the implemented classes without any modifications concerning the original EPAToolkit library. Therefore, users already familiar with EPAToolkit should be able to accurately represent a network in the coupling library. In practical terms, the library loads the water network characteristics through an EPANET input file (.inp), in which the operational variables are dynamically modified according to the optimization procedure.
 
 ## Getting Started 🚀
