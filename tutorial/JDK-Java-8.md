@@ -1,53 +1,53 @@
-# Guía de instalación: JDK Java 8
+# Installation Guide: JDK Java 8
 
-Las siguientes instrucciones le permitirán instalar **JDK Java 8** en su computador. Si actualmente cuenta con otra versión de **JDK** no se preocupe.
+The following instructions will let you to install **JDK Java 8** on your computer. If you currently have an account with other **JDK** version, do not worry about it.
 
-## Descarga
+## Download
 
-1. Ir a la siguiente página https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html.
-2. Aceptar acuerdo de licencia. Ver Figura 1 paso **1**.
-3. Seleccionar el hipervínculo  ***jdk-8u221-windows-x64.exe***. Ver Figura 1 paso **2**.
+1. Go to https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+2. Accept license agreement. See Figure 1, step **1**.
+3. Select the hyperlink ***jdk-8u221-windows-x64.exe***. See Figure 1, step **2**.
 
-| ![Figura 1](figures/jdk/dowload_jdk.png) | 
+| ![Figure 1](figures/jdk/dowload_jdk.png) | 
 |:--:|
-| *Figura 1* |
+| *Figure 1* |
 
-4. Finalmente para terminar la descarga, Oracle le solicita crear una cuenta su página.
+4. Finally, to end the download, Oracle is going to ask you to create an account on its website.
 
-| ![Figura 2](figures/jdk/oracle_account.png) | 
+| ![Figure 2](figures/jdk/oracle_account.png) | 
 |:--:|
-| *Figura 2* |
+| *Figure 2* |
 
-### Instalación
+### Installation
 
-5. Hacer doble clic sobre el archivo descargado
+5. Double-click on the downloaded archive.
 
-| ![Figura 3](figures/jdk/install_jdk1.png) | 
+| ![Figure 3](figures/jdk/install_jdk1.png) | 
 |:--:|
-| *Figura 3* |
+| *Figure 3* |
 
-6. Comúnmente Windows 10 pregunta si desea ejecutar el archivo. Seleccionar **Si**.
+6. Commonly, Windows 10 ask if you want to run the archive. Select **Yes**.
 
-| ![Figura 4](figures/jdk/install_jdk2.png) | 
+| ![Figure 4](figures/jdk/install_jdk2.png) | 
 |:--:|
-| *Figura 4* |
+| *Figure 4* |
 
-7. Para poder instalar debe seleccionar **siguiente** como se muestra en las figuras 4, 5 y 6:
+7. To install, you have to select **next** as shown in figures 4, 5 and 6:
 
-| ![Figura 5](figures/jdk/install_jdk3.png) | 
+| ![Figure 5](figures/jdk/install_jdk3.png) | 
 |:--:|
-| *Figura 5* |
+| *Figure 5* |
 
-| ![Figura 6](figures/jdk/install_jdk4.png) | 
+| ![Figure 6](figures/jdk/install_jdk4.png) | 
 |:--:|
-| *Figura 6* |
+| *Figure 6* |
 
-| ![Figura 7](figures/jdk/install_jdk5.png) | 
+| ![Figure 7](figures/jdk/install_jdk5.png) | 
 |:--:|
-| *Figura 7* |
+| *Figure 7* |
 
-8. Finalmente, al terminar la descarga se muestra el siguiente mensaje:
+8. Finally, once the download is done, it will be shown the following message.
 
-| ![Figura 8](figures/jdk/install_jdk6.png) | 
+| ![Figure 8](figures/jdk/install_jdk6.png) | 
 |:--:|
-| *Figura 8* |
+| *Figure 8* |
